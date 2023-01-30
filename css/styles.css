@@ -10,7 +10,9 @@
 }
 
 body {font-family: 'Roboto', sans-serif;
-color: var(--main-color)}
+color: var(--main-color);
+background-color: #FFFFFF;
+}
 
 .link {
     text-decoration: none;
@@ -37,10 +39,7 @@ color: var(--main-color)}
   /*  Header   */
 
   .logo {
-    width: 71px;
-    height: 24px;
-    font-family: 'Raleway';
-    font-style: normal;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -57,7 +56,9 @@ color: var(--main-color)}
 }
 
 .nav-item {
-    font-style: normal;
+}
+
+.nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -65,16 +66,28 @@ color: var(--main-color)}
     color: var(--main-nav-color);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
 .address-list {
 }
 
 .address-item {
+}
+
+.address-link {
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-color);
+}
+
+.address-link:focus,
+.address-link:hover {
+    color: var(--portfolio-active-btn-color);
 }
 
 
@@ -88,26 +101,29 @@ color: var(--main-color)}
 }
 
 .hero-title {
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-color: var(--hero-text-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hero-text-color);
 }
 
 .hero-btn {
-background-color: var(--accent-color);
-font-family: inherit;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: var(--hero-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--portfolio-active-btn-color);
 }
 
 
@@ -126,7 +142,6 @@ color: var(--hero-text-color);
 .advantages-item {
 }
 .list-title {
-font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -146,7 +161,6 @@ color: var(--main-color);
 /*     Section Our Products      */
 
 .section-title {
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -175,7 +189,6 @@ color: var(--main-nav-color);
     text-align: center;
 }
 .list-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -222,6 +235,11 @@ color: var(--main-nav-color);
 
 
 .btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     background-color: var(--secondary-bg-color);
     color: var(--accent-color);
     cursor: pointer;
@@ -241,7 +259,6 @@ color: var(--main-nav-color);
 .list {
 }
 .portfolio-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
